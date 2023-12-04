@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="40dp"
+        android:backgroundTint="@color/lavender"
+        app:tint = "@color/white"
+        android:src="@drawable/baseline_add_a_photo_24" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/imageView"/>
+
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="0.6"-->
+<!--        android:layout_marginTop="600dp"-->
+<!--        android:padding="16dp"-->
+<!--        android:id="@+id/etImageId"-->
+<!--        android:hint="Type image name"/>-->
+
+<!--    <Button-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:id="@+id/getImage"-->
+<!--        android:layout_marginTop="650dp"-->
+<!--        android:layout_marginLeft="10sp"-->
+<!--        android:text="See all the dog"/>-->
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recyclerView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridView"
+        android:numColumns="2"/>
+</RelativeLayout>
